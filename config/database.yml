@@ -80,6 +80,8 @@ test:
 #
 production:
   <<: *default
-  database: turistrans_production
-  username: turistrans
-  password: <%= ENV['TURISTRANS_DATABASE_PASSWORD'] %>
+  host: ec2-54-163-240-54.compute-1.amazonaws.com
+  database: d405hbjuk2co4b
+  port: 5432
+  username: mzlzjdhoidkqzc
+  password: 503544c425fa02c5edbd112ff9f5cb5d9e616937915679f12b60f55b7bf6cae9

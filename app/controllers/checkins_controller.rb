@@ -4,7 +4,7 @@ class CheckinsController < ApplicationController
     if @check_in.save
       render json: { data: @check_in }
     else
-      render json: { error: @check_in.errors }
+      render json: { error: @check_in.errors }, status: :unprocessable_entity
     end
   end
 

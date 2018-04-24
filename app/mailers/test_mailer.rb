@@ -3,7 +3,7 @@ class TestMailer < ActionMailer::Base
   def tagged_message user
     mail(
       :subject => 'hello',
-      :to  => 'jvaldebenito@smarti.cl',
+      :to  => 'turistransltda@gmail.com',
       :from => 'christian.munozp@mail.udp.cl',
       :tag     => 'my-tag',
       :track_opens => 'true',

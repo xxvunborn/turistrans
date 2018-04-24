@@ -31,7 +31,7 @@ module Turistrans
     config.api_only = true
     config.action_mailer.delivery_method = :postmark
     config.action_mailer.postmark_settings = { :api_token => "1a474297-fff8-4789-883b-5cd39048fbc8" }
-
+    config.action_mailer.raise_delivery_errors = true
     config.middleware.insert_before 0, Rack::Cors do
       allow do
         origins '*'

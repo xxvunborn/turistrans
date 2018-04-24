@@ -2,6 +2,7 @@ class CheckinsController < ApplicationController
   def create
     @check_in = Checkin.new(check_in_params)
     if @check_in.save
+      TestMailer.tagged_message.deliver_now
       render json: { data: @check_in }
     else
       render json: { error: @check_in.errors }, status: :unprocessable_entity

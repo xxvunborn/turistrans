@@ -1,10 +1,13 @@
 class TestMailer < ActionMailer::Base
-  def message
+
+  def tagged_message
     mail(
-      :subject => 'Hello from Postmark',
-      :to  => 'unborn.system@gmail.com',
+      :subject => 'hello',
+      :to  => 'christian.munozp@mail.udp.cl',
       :from => 'sender@example.org',
-      :html_body => '<strong>Hello</strong> dear Postmark user.',
-      :track_opens => 'true')
+      :tag     => 'my-tag',
+      :track_opens => 'true'
+    )
   end
+
 end

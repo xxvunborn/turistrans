@@ -1,9 +1,12 @@
+require 'open-uri'
 class TestMailer < ActionMailer::Base
 
-  def tagged_message user
+  def tagged_message user, image
+    attachments["filename.png"] = open(image).read
     mail(
-      :subject => 'hello',
+      :subject => 'Nuevo registro en Turistrans',
       :to  => 'turistransltda@gmail.com',
+      #:to  => 'jvaldebenito@smarti.cl',
       :from => 'christian.munozp@mail.udp.cl',
       :tag     => 'my-tag',
       :track_opens => 'true',

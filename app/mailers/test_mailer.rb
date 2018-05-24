@@ -8,7 +8,7 @@ class TestMailer < ActionMailer::Base
       :to  => 'turistransltda@gmail.com',
       #:to  => 'jvaldebenito@smarti.cl',
       #:to  => 'unborn.system@gmail.com',
-      :from => 'christian.munozp@mail.udp.cl',
+      :from => 'Pmoreno@transportesmg.cl',
       :tag     => 'my-tag',
       :track_opens => 'true',
       name: user.name,

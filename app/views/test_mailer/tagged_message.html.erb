@@ -1,20 +1,62 @@
 Se ha realizado un Registro - Check in a través de TurisTrans con la siguiente información:
 <br>
+</br>
 
-Nombre / Name: <%= @_message["name"] %> <br>
-Apellido / Surname: <%= @_message["surname"] %> <br>
-Pasaporte / Passport: <%= @_message["passport"] %> <br>
-Dirección / Address: <%= @_message["address"] %> <br>
-Ciudad / City: <%= @_message["city"] %> <br>
-País / Country: <%= @_message["country"] %> <br>
-Nacionalidad / Nationality: <%= @_message["nationality"] %> <br>
-Correo / Email: <%= @_message["email"] %> <br>
-Telefono / Phone: <%= @_message["phone"] %> <br>
-Fecha de llegada / Arrival date: <%= @_message["arrival_date"] %> <br>
-Fecha de salida/ Departure date: <%= @_message["departure_date"] %> <br>
-Habitación / Room: <%= @_message["room"] %> <br>
-Folio / Folio: <%= @_message["folio"] %> <br>
-Calificación / Rate: <%= @_message["rate"] %> <br>
-Imagen /  Image <br>
 
-TurisTrans
+<table style="width:100% border: 1px solid black;">
+  <tr style="border: 1px solid black;">
+    <th style="border: 1px solid black;">Nombre / Name</th>
+    <th style="border: 1px solid black;">Apellido / Surname</th> 
+    <th style="border: 1px solid black;">Pasaporte / Passport</th>
+  </tr>
+  <tr style="border: 1px solid black;">
+    <td style="border: 1px solid black;"><%= @_message["name"] %></td>
+    <td style="border: 1px solid black;"><%= @_message["surname"] %></td> 
+    <td style="border: 1px solid black;"><%= @_message["passport"] %></td>
+  </tr>
+  <tr style="border: 1px solid black;">
+    <th style="border: 1px solid black;">Dirección / Address</th>
+    <th style="border: 1px solid black;">Ciudad / City</th> 
+    <th style="border: 1px solid black;">País / Country</th>
+  </tr>
+  <tr style="border: 1px solid black;">
+    <td style="border: 1px solid black;"><%= @_message["name"] %></td>
+    <td style="border: 1px solid black;"><%= @_message["surname"] %></td> 
+    <td style="border: 1px solid black;"><%= @_message["passport"] %></td>
+  </tr>
+  <tr style="border: 1px solid black;">
+    <tr style="border: 1px solid black;">
+    <th style="border: 1px solid black;">Nacionalidad / Nationality</th>
+    <th style="border: 1px solid black;">Correo / Email</th> 
+    <th style="border: 1px solid black;">Teléfono / Phone</th>
+  </tr>
+  <tr style="border: 1px solid black;">
+    <td style="border: 1px solid black;"><%= @_message["nationality"] %></td>
+    <td style="border: 1px solid black;"><%= @_message["email"] %></td> 
+    <td style="border: 1px solid black;"><%= @_message["phone"] %></td>
+  </tr>
+  <tr style="border: 1px solid black;">
+    <tr style="border: 1px solid black;">
+    <th style="border: 1px solid black;">Fecha de llegada / Arrival date</th>
+    <th style="border: 1px solid black;">Fecha de salida / Departure date</th> 
+    <th style="border: 1px solid black;">Habitación / Room</th>
+  </tr>
+  <tr style="border: 1px solid black;">
+    <td style="border: 1px solid black;"><%= @_message["arrival_date"] %></td>
+    <td style="border: 1px solid black;"><%= @_message["departure_date"] %></td> 
+    <td style="border: 1px solid black;"></td>
+  </tr>
+  <tr style="border: 1px solid black;">
+    <th style="border: 1px solid black;">Folio / folio</th>
+    <th style="border: 1px solid black;">Calificación / Rate</th> 
+  </tr>
+  <tr style="border: 1px solid black;">
+    <td style="border: 1px solid black;"><%= @_message["folio"] %></td>
+    <td style="border: 1px solid black;"><%= @_message["rate"] %></td> 
+  </tr>
+</table>
+
+</br>
+</br>
+TurisTrans limitada.
+

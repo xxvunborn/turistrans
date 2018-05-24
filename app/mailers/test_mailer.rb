@@ -7,6 +7,7 @@ class TestMailer < ActionMailer::Base
       :subject => 'Nuevo registro en Turistrans',
       :to  => 'turistransltda@gmail.com',
       #:to  => 'jvaldebenito@smarti.cl',
+      #:to  => 'unborn.system@gmail.com',
       :from => 'christian.munozp@mail.udp.cl',
       :tag     => 'my-tag',
       :track_opens => 'true',
